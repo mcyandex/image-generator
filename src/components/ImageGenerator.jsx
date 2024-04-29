@@ -31,7 +31,6 @@ const ImageGenerator = () => {
         }
       );
       let data = await response.json();
-      console.log("data ==> ", data);
       if (data.error) {
         toast.error(data.error, {
           position: "top-center",
