@@ -26,7 +26,7 @@ const ImageGenerator = () => {
           body: JSON.stringify({
             prompt: inputRef.current.value,
             n: 1,
-            size: "312x312",
+            size: "256x256",
           }),
         }
       );
