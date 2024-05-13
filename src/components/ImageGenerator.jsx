@@ -32,7 +32,7 @@ const ImageGenerator = () => {
       );
       let data = await response.json();
       if (data.error) {
-        toast.error(data.error, {
+        toast.error(data.error.message, {
           position: "top-center",
           autoClose: 4000,
           hideProgressBar: false,
